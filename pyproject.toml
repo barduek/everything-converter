@@ -1,0 +1,68 @@
+[project]
+name = "converter"
+version = "0.1.0"
+description = "Conversor de archivos web, en español y sin conexión a Internet"
+requires-python = ">=3.12,<3.13"
+# Dependencias de ejecución fijadas; uv.lock fija además las transitivas por hash
+dependencies = [
+    "fastapi==0.162.0",
+    "starlette==1.10.0",
+    "uvicorn==0.54.0",
+    "anyio==4.15.1",
+    "pillow==11.3.0",
+    "pypng==0.20220715.0",
+    "pypdfium2==5.14.0",
+    "weasyprint==70.0",
+    "markdown-it-py==4.2.0",
+    "beautifulsoup4==4.15.0",
+    "html5lib==1.1",
+    "markdownify==1.2.3",
+    "lxml==6.1.3",
+    "olefile==0.47",
+    "fonttools==4.68.0",
+]
+
+[dependency-groups]
+# Solo para desarrollo, pruebas y build; no van en la imagen de producción
+dev = [
+    "pytest==9.2.0",
+    "pytest-asyncio==1.4.1",
+    "hypothesis==6.170.13",
+    "httpx==0.28.1",
+    "python-docx==1.2.0",
+    "playwright==1.64.1",
+    "babel==2.18.0",
+    "ruff==0.17.3",
+    "mypy==2.4.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "converter"
+module-root = "src"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# pytester permite probar los hooks de tests/conftest.py
+addopts = ["-ra", "--strict-markers", "--strict-config", "-p", "pytester"]
+xfail_strict = true
+# Modo estricto: convive con el plugin de pytest de anyio
+asyncio_mode = "strict"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+mypy_path = "src"
+files = ["src", "tests"]

@@ -1,0 +1,2457 @@
+{
+  "pbtResults": {
+    "2.2 Escribir la prueba de propiedad de `load_config`": {
+      "status": "passed",
+      "lastRunTimestamp": 1793299460869
+    },
+    "3.2 Escribir la prueba de propiedad del nombre del Archivo_Resultado": {
+      "status": "passed",
+      "lastRunTimestamp": 1793307258405
+    },
+    "3.4 Escribir la prueba de propiedad de los nombres de página del ZIP": {
+      "status": "passed",
+      "lastRunTimestamp": 1793313816341
+    },
+    "11.4 Escribir la prueba de propiedad del Porcentaje_de_Avance": {
+      "status": "passed",
+      "lastRunTimestamp": 1793313890435
+    },
+    "6.2 Escribir la prueba de propiedad de la clasificación de texto": {
+      "status": "passed",
+      "lastRunTimestamp": 1793314181654
+    },
+    "7.2 Escribir la prueba de propiedad del Serializador_SRT": {
+      "status": "passed",
+      "lastRunTimestamp": 1793314267739
+    },
+    "19.4 Escribir la prueba de propiedad de la Pista_de_Audio_Predeterminada": {
+      "status": "passed",
+      "lastRunTimestamp": 1793314485663
+    },
+    "19.3 Escribir la prueba de propiedad de la mezcla a estéreo": {
+      "status": "passed",
+      "lastRunTimestamp": 1793314526089
+    },
+    "19.2 Escribir la prueba de propiedad de la frecuencia de muestreo": {
+      "status": "passed",
+      "lastRunTimestamp": 1793314623500
+    },
+    "18.7 Escribir la prueba de propiedad de las fuentes reemplazadas": {
+      "status": "passed",
+      "lastRunTimestamp": 1793314814014
+    },
+    "15.2 Escribir la prueba de propiedad de la Orientación_EXIF": {
+      "status": "passed",
+      "lastRunTimestamp": 1793315338603
+    },
+    "3.3 Escribir la prueba de propiedad de idempotencia de la Normalización_de_Nombre": {
+      "status": "passed",
+      "lastRunTimestamp": 1793315490751
+    },
+    "7.3 Escribir la prueba de propiedad de ida y vuelta SRT": {
+      "status": "passed",
+      "lastRunTimestamp": 1793318139694
+    },
+    "7.6 Escribir la prueba de propiedad de la normalización de segmentos": {
+      "status": "passed",
+      "lastRunTimestamp": 1793318317310
+    },
+    "7.4 Escribir la prueba de propiedad de los errores del Intérprete_SRT": {
+      "status": "passed",
+      "lastRunTimestamp": 1793318662448
+    },
+    "4.6 Escribir la prueba de propiedad del saneamiento del Log_de_Eventos": {
+      "status": "passed",
+      "lastRunTimestamp": 1793319075372
+    },
+    "4.5 Escribir la prueba de propiedad de los mensajes al usuario": {
+      "status": "passed",
+      "lastRunTimestamp": 1793320411725
+    },
+    "5.3 Escribir la prueba de propiedad del registro contra su modelo": {
+      "status": "passed",
+      "lastRunTimestamp": 1793321806393
+    }
+  },
+  "executionHistory": {
+    "1.1 Crear `pyproject.toml`, la estructura de paquetes y la configuración de pruebas": [
+      {
+        "executionId": "38a0b1f0-6154-46b2-8256-1221e2bd9159",
+        "chatSessionId": "sess_66665051-d3b0-4847-97cb-eacf1f00699b",
+        "timestamp": 1793277660812
+      },
+      {
+        "executionId": "38a0b1f0-6154-46b2-8256-1221e2bd9159",
+        "chatSessionId": "sess_66665051-d3b0-4847-97cb-eacf1f00699b",
+        "timestamp": 1793278427223
+      }
+    ],
+    "1. Crear el esqueleto del proyecto": [
+      {
+        "executionId": "38a0b1f0-6154-46b2-8256-1221e2bd9159",
+        "chatSessionId": "sess_66665051-d3b0-4847-97cb-eacf1f00699b",
+        "timestamp": 1793278427256
+      }
+    ],
+    "2.1 Implementar `src/converter/config.py` con `Config`, `ConfigError` y `load_config(env)`": [
+      {
+        "executionId": "023aa598-a9c2-4e95-90fd-d8b3fa36e45c",
+        "chatSessionId": "sess_5b14aebe-943a-4219-a44e-1c92d87298a5",
+        "timestamp": 1793279704666
+      },
+      {
+        "executionId": "023aa598-a9c2-4e95-90fd-d8b3fa36e45c",
+        "chatSessionId": "sess_5b14aebe-943a-4219-a44e-1c92d87298a5",
+        "timestamp": 1793280630228
+      }
+    ],
+    "2. Implementar la configuración": [
+      {
+        "executionId": "023aa598-a9c2-4e95-90fd-d8b3fa36e45c",
+        "chatSessionId": "sess_5b14aebe-943a-4219-a44e-1c92d87298a5",
+        "timestamp": 1793280630287
+      }
+    ],
+    "2.2 Escribir la prueba de propiedad de `load_config`": [
+      {
+        "executionId": "cfbf7267-2267-4c40-8ee1-e08e53d977d4",
+        "chatSessionId": "sess_a3d3075e-5dfd-4068-b791-d9c92057cf04",
+        "timestamp": 1793284274456
+      },
+      {
+        "executionId": "d3ea9e02-a47f-427d-b115-ee014cd1ec61",
+        "chatSessionId": "sess_844dd7b8-a52d-4530-9bd9-e87172076083",
+        "timestamp": 1793295326275
+      },
+      {
+        "executionId": "d3ea9e02-a47f-427d-b115-ee014cd1ec61",
+        "chatSessionId": "sess_844dd7b8-a52d-4530-9bd9-e87172076083",
+        "timestamp": 1793299485452
+      }
+    ],
+    "2.3 Escribir pruebas unitarias de la configuración": [
+      {
+        "executionId": "4b79fe31-9f8f-490e-8a48-faf6e8d7f34c",
+        "chatSessionId": "sess_5d55a862-d059-4ff3-afd4-f272de7550de",
+        "timestamp": 1793299641604
+      },
+      {
+        "executionId": "4b79fe31-9f8f-490e-8a48-faf6e8d7f34c",
+        "chatSessionId": "sess_5d55a862-d059-4ff3-afd4-f272de7550de",
+        "timestamp": 1793299871398
+      }
+    ],
+    "3.1 Implementar `src/converter/naming.py`": [
+      {
+        "executionId": "61e712c1-f33d-4ff3-9ab3-3f4faf628033",
+        "chatSessionId": "sess_eedb2632-5b91-48f7-8549-31554bbae821",
+        "timestamp": 1793300181673
+      },
+      {
+        "executionId": "61e712c1-f33d-4ff3-9ab3-3f4faf628033",
+        "chatSessionId": "sess_eedb2632-5b91-48f7-8549-31554bbae821",
+        "timestamp": 1793300668623
+      }
+    ],
+    "3. Implementar la normalización de nombres": [
+      {
+        "executionId": "61e712c1-f33d-4ff3-9ab3-3f4faf628033",
+        "chatSessionId": "sess_eedb2632-5b91-48f7-8549-31554bbae821",
+        "timestamp": 1793300668694
+      }
+    ],
+    "3.2 Escribir la prueba de propiedad del nombre del Archivo_Resultado": [
+      {
+        "executionId": "3fcb2079-ee8e-420a-aa61-760f0cbd9b9d",
+        "chatSessionId": "sess_ccc7f9b2-1c19-491d-a4bb-edfe2fbdb8f8",
+        "timestamp": 1793303692832
+      },
+      {
+        "executionId": "3fcb2079-ee8e-420a-aa61-760f0cbd9b9d",
+        "chatSessionId": "sess_ccc7f9b2-1c19-491d-a4bb-edfe2fbdb8f8",
+        "timestamp": 1793307298424
+      }
+    ],
+    "3.3 Escribir la prueba de propiedad de idempotencia de la Normalización_de_Nombre": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203238
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315388151
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317945133
+      }
+    ],
+    "3.4 Escribir la prueba de propiedad de los nombres de página del ZIP": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203302
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313696013
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314305930
+      }
+    ],
+    "3.5 Escribir pruebas unitarias de nombres": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203354
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313696042
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314306406
+      }
+    ],
+    "4.1 Implementar `src/converter/models.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203396
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308242312
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309367416
+      }
+    ],
+    "4.2 Implementar `src/converter/messages_es.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203439
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793312233248
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313683918
+      }
+    ],
+    "4.3 Implementar `src/converter/eventlog.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203483
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793312233289
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313684509
+      }
+    ],
+    "4.4 Implementar `src/converter/converters/errors.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203527
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315388603
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317945172
+      }
+    ],
+    "4.5 Escribir la prueba de propiedad de los mensajes al usuario": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203578
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317958395
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320442240
+      }
+    ],
+    "4.6 Escribir la prueba de propiedad del saneamiento del Log_de_Eventos": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203636
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317958428
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320442705
+      }
+    ],
+    "4.7 Escribir pruebas unitarias de mensajes, log y clasificación": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203674
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320698111
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793322096941
+      }
+    ],
+    "5.1 Implementar `src/converter/registry/model.py` y `src/converter/registry/registry.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203711
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315390118
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317946063
+      }
+    ],
+    "5.2 Implementar `src/converter/registry/loader.py` y crear el catálogo de Formatos": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203753
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320698169
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793322096995
+      }
+    ],
+    "5.3 Escribir la prueba de propiedad del registro contra su modelo": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203803
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320698212
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793322097046
+      }
+    ],
+    "5.4 Escribir pruebas unitarias del cargador": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203858
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324614561
+      }
+    ],
+    "6.1 Implementar `src/converter/detection/text.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203905
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308242369
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309367891
+      }
+    ],
+    "6.2 Escribir la prueba de propiedad de la clasificación de texto": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308203958
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313696994
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314307940
+      }
+    ],
+    "6.3 Implementar las firmas y las sondas": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204017
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320699030
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793322097443
+      }
+    ],
+    "6.4 Implementar `src/converter/detection/source_info.py` y `src/converter/detection/detector.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204081
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793325414916
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793327192309
+      }
+    ],
+    "6.5 Escribir la prueba de propiedad de la detección por firma": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204140
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324614619
+      }
+    ],
+    "6.6 Escribir la prueba de propiedad de los Formatos_de_Texto": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204198
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324614669
+      }
+    ],
+    "6.7 Escribir la prueba de propiedad del Límite_de_Tamaño por Categoría": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204266
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324614714
+      }
+    ],
+    "6.8 Escribir pruebas unitarias de firmas y detección": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204353
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324614777
+      }
+    ],
+    "7.1 Implementar `src/converter/srt/model.py`, `src/converter/srt/serializer.py` y `src/converter/srt/parser.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204391
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308242525
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309368925
+      }
+    ],
+    "7.2 Escribir la prueba de propiedad del Serializador_SRT": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204433
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313698518
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314308406
+      }
+    ],
+    "7.3 Escribir la prueba de propiedad de ida y vuelta SRT": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204471
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317958451
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320443135
+      }
+    ],
+    "7.4 Escribir la prueba de propiedad de los errores del Intérprete_SRT": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204513
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317959620
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320444133
+      }
+    ],
+    "7.5 Implementar `src/converter/srt/segments.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204570
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793312233480
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313685453
+      }
+    ],
+    "7.6 Escribir la prueba de propiedad de la normalización de segmentos": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204618
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317959859
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320444802
+      }
+    ],
+    "7.7 Escribir la prueba de propiedad del TXT de transcripción": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204673
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320458409
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320678722
+      }
+    ],
+    "8. Checkpoint - Verificar el núcleo puro": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204718
+      }
+    ],
+    "9.1 Implementar `src/converter/storage/workspace.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204767
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315390609
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317946470
+      }
+    ],
+    "9.2 Implementar `src/converter/storage/sweeper.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204812
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320699497
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793322098391
+      }
+    ],
+    "9.3 Escribir pruebas unitarias del almacenamiento": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204863
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324614820
+      }
+    ],
+    "10.1 Implementar `src/converter/sandbox/launch.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204919
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308243021
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309370396
+      }
+    ],
+    "10.2 Implementar `src/converter/sandbox/runner.py`, `src/converter/sandbox/limits.py` y `src/converter/sandbox/cpus.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308204966
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315391583
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793317947509
+      }
+    ],
+    "10.3 Implementar `src/converter/detection/inspect_runner.py`, `src/converter/detection/inspectors/__init__.py` y `src/converter/workers/inspect.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205030
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793327196460
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793328373884
+      }
+    ],
+    "10.4 Escribir pruebas unitarias del ejecutor y los inspectores": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205070
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324614866
+      }
+    ],
+    "11.1 Implementar `src/converter/tasks/state_machine.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205114
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793312234576
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313686462
+      }
+    ],
+    "11.2 Implementar `src/converter/tasks/scheduler.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205152
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308243642
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309371063
+      }
+    ],
+    "11.3 Implementar `src/converter/tasks/progress.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205199
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309380246
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793311547488
+      }
+    ],
+    "11.4 Escribir la prueba de propiedad del Porcentaje_de_Avance": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205244
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313698677
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314309100
+      }
+    ],
+    "11.5 Implementar `src/converter/converters/base.py` y el descubrimiento de convertidores": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205293
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324634549
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793325406982
+      }
+    ],
+    "11.6 Implementar la creación, la detección y la vista de Tareas": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205339
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793328377790
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793329371841
+      }
+    ],
+    "11.7 Implementar confirmación, rechazo de la confirmación y cancelación": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205383
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793329376416
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793330446422
+      }
+    ],
+    "11.8 Implementar la ejecución, la entrega y la retención": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205432
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793330454525
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793332624145
+      }
+    ],
+    "11.9 Escribir la prueba de propiedad de la máquina de estados": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205479
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324614913
+      }
+    ],
+    "11.10 Escribir la prueba de propiedad del planificador": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205531
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324614961
+      }
+    ],
+    "11.11 Escribir la prueba de propiedad de las solicitudes simultáneas": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205573
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615009
+      }
+    ],
+    "11.12 Escribir la prueba de propiedad de los destinos ofrecidos": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205634
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615054
+      }
+    ],
+    "11.13 Escribir la prueba de propiedad de los Rechazos_de_Destino": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205674
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615110
+      }
+    ],
+    "11.14 Escribir la prueba de propiedad de la confirmación de pérdida": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205717
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615164
+      }
+    ],
+    "11.15 Escribir la prueba de propiedad del Idioma_de_Transcripción": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205761
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615215
+      }
+    ],
+    "11.16 Escribir la prueba de propiedad de los Identificadores_de_Tarea": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205806
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615278
+      }
+    ],
+    "11.17 Escribir la prueba de propiedad de la limpieza": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205852
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615325
+      }
+    ],
+    "11.18 Escribir pruebas unitarias de escenarios del Gestor_de_Tareas": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205900
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615370
+      }
+    ],
+    "12.1 Implementar `src/converter/api/app.py` y `src/converter/api/security.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205940
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793332633228
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793334185470
+      }
+    ],
+    "12.2 Implementar `src/converter/api/upload.py` y registrar la ruta en `app.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308205984
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793334189868
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793335110042
+      }
+    ],
+    "12.3 Implementar `src/converter/api/tasks.py` y `src/converter/api/download.py` y registrar las rutas en `app.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206030
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793335122305
+      },
+      {
+        "executionId": "a0e86641-6586-46ff-81c3-66a9a3c80049",
+        "chatSessionId": "sess_b97f32e0-d49c-44df-a5de-6a008542ac1a",
+        "timestamp": 1793364235919
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793364257488
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793364735929
+      }
+    ],
+    "12.4 Escribir la prueba de propiedad de la recepción": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206073
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615421
+      }
+    ],
+    "12.5 Escribir la prueba de propiedad del almacenamiento independiente del nombre": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206119
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615476
+      }
+    ],
+    "12.6 Escribir la prueba de propiedad de la descarga": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206183
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615528
+      }
+    ],
+    "12.7 Escribir la prueba de propiedad del aislamiento entre Tareas": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206226
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615577
+      }
+    ],
+    "12.8 Escribir pruebas unitarias de la API": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206269
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615626
+      }
+    ],
+    "13.1 Implementar `src/converter/__main__.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206310
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793364743312
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793365438719
+      }
+    ],
+    "13.2 Implementar `src/converter/healthcheck.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206353
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793364743813
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793365438774
+      }
+    ],
+    "13.3 Escribir pruebas unitarias del arranque y del Indicador_de_Salud": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206407
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615677
+      }
+    ],
+    "14. Checkpoint - Verificar que el Conversor arranca, recibe archivos y detecta el Tipo_Real": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206456
+      }
+    ],
+    "15.1 Implementar `src/converter/converters/orientation.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206505
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309381213
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793311548348
+      }
+    ],
+    "15.2 Escribir la prueba de propiedad de la Orientación_EXIF": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206551
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314314568
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315371916
+      }
+    ],
+    "15.3 Implementar el inspector `image` en `src/converter/detection/inspectors/image.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206597
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793365458509
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793370139520
+      }
+    ],
+    "15.4 Implementar el convertidor `image.raster` en `src/converter/converters/images.py` y `src/converter/workers/image.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206640
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793365458556
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793370139565
+      }
+    ],
+    "15.5 Escribir la prueba de propiedad de la composición sobre blanco": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206687
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615720
+      }
+    ],
+    "15.6 Implementar el convertidor `image.pdf` en `src/converter/converters/pdf_image_writer.py`, `src/converter/converters/image_pdf.py` y `src/converter/workers/image_pdf.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206732
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793365458927
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793373292904
+      }
+    ],
+    "15.7 Registrar los 9 pares de imagen en `catalog/pairs.toml`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206800
+      }
+    ],
+    "15.8 Escribir la prueba de propiedad de las conversiones entre PNG, JPG y WEBP": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206846
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615791
+      }
+    ],
+    "15.9 Escribir la prueba de propiedad de la reducción de 16 bits": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206887
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615842
+      }
+    ],
+    "15.10 Escribir la prueba de propiedad de ida y vuelta PNG→WEBP→PNG": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206932
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615886
+      }
+    ],
+    "15.11 Escribir la prueba de propiedad de imagen a PDF": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308206983
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615931
+      }
+    ],
+    "15.12 Escribir la prueba de propiedad de los límites de dimensiones y píxeles": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207033
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324615978
+      }
+    ],
+    "15.13 Escribir pruebas unitarias de imágenes": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207083
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616026
+      }
+    ],
+    "16.1 Implementar el inspector `pdf` en `src/converter/detection/inspectors/pdf.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207131
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793365459738
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793370139594
+      }
+    ],
+    "16.2 Implementar el convertidor `pdf.text` en `src/converter/converters/pdf_text.py` y `src/converter/workers/pdf_text.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207184
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793365460830
+      },
+      {
+        "executionId": "bac6e7ea-816a-48b1-809b-9e1e7f4b3746",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793370140347
+      }
+    ],
+    "16.3 Implementar el convertidor `pdf.raster` en `src/converter/converters/pdf_raster.py` y `src/converter/workers/pdf_raster.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207234
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793372421409
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793373293009
+      }
+    ],
+    "16.4 Registrar PDF a TXT y PDF a PNG en `catalog/pairs.toml`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207278
+      }
+    ],
+    "16.5 Escribir la prueba de propiedad de PDF a TXT": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207331
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616076
+      }
+    ],
+    "16.6 Escribir la prueba de propiedad de PDF a PNG": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207381
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616122
+      }
+    ],
+    "16.7 Escribir la prueba de propiedad de los PDF con permisos restringidos": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207450
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616176
+      }
+    ],
+    "16.8 Escribir pruebas unitarias de PDF": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207498
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616227
+      }
+    ],
+    "17.1 Implementar `src/converter/converters/text_docs/dom.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207547
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793312235275
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793313686995
+      }
+    ],
+    "17.2 Implementar el convertidor `text.html` en `src/converter/converters/text_docs/to_html.py` y `src/converter/workers/text_html.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207602
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793372422111
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793373293582
+      }
+    ],
+    "17.3 Implementar el convertidor `text.plain` en `src/converter/converters/text_docs/to_txt.py` y `src/converter/workers/text_plain.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207657
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793372423102
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793373294299
+      }
+    ],
+    "17.4 Implementar el convertidor `text.markdown` en `src/converter/converters/text_docs/to_md.py` y `src/converter/workers/text_markdown.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207706
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793372423449
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793373295130
+      }
+    ],
+    "17.5 Implementar `src/converter/converters/text_docs/layout.py` y `docker/fontconfig/default-only.conf`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207754
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309382732
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793311549371
+      }
+    ],
+    "17.6 Implementar el convertidor `text.pdf` en `src/converter/converters/text_docs/to_pdf.py` y `src/converter/workers/text_pdf.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207804
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793373332853
+      }
+    ],
+    "17.7 Registrar los 8 pares de documentos de texto en `catalog/pairs.toml`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207853
+      }
+    ],
+    "17.8 Escribir la prueba de propiedad de TXT a HTML": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207904
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616279
+      }
+    ],
+    "17.9 Escribir la prueba de propiedad de ida y vuelta TXT→HTML→TXT": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308207957
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616342
+      }
+    ],
+    "17.10 Escribir la prueba de propiedad de la maquetación de TXT a PDF": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208022
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616393
+      }
+    ],
+    "17.11 Escribir la prueba de propiedad de HTML y MD a TXT": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208071
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616436
+      }
+    ],
+    "17.12 Escribir la prueba de propiedad de HTML a MD": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208119
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616481
+      }
+    ],
+    "17.13 Escribir la prueba de propiedad de ida y vuelta MD→HTML→MD→HTML": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208177
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616527
+      }
+    ],
+    "17.14 Escribir la prueba de propiedad de los Scripts": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208229
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616579
+      }
+    ],
+    "17.15 Escribir la prueba de propiedad de ida y vuelta TXT→PDF→TXT": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208280
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616622
+      }
+    ],
+    "17.16 Escribir la prueba de propiedad de ida y vuelta MD o HTML→PDF→TXT": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208333
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616676
+      }
+    ],
+    "17.17 Escribir la prueba de propiedad de los caracteres no representables": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208382
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616730
+      }
+    ],
+    "17.18 Escribir pruebas unitarias de documentos de texto": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208432
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616793
+      }
+    ],
+    "18.1 Implementar `src/converter/detection/zipcheck.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208482
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309383245
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793311550857
+      }
+    ],
+    "18.2 Escribir la prueba de propiedad de los Límites_de_Descompresión": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208539
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616836
+      }
+    ],
+    "18.3 Implementar el inspector `docx` en `src/converter/detection/inspectors/docx.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208609
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793373333244
+      }
+    ],
+    "18.4 Implementar el saneamiento en `src/converter/converters/docx/sanitize.py` y `src/converter/workers/docx_sanitize.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208661
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616880
+      }
+    ],
+    "18.5 Escribir la prueba de propiedad del saneamiento de DOCX": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208716
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616929
+      }
+    ],
+    "18.6 Implementar `src/converter/converters/docx/fonts.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208772
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793309384157
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793311551249
+      }
+    ],
+    "18.7 Escribir la prueba de propiedad de las fuentes reemplazadas": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208822
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314315158
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315372717
+      }
+    ],
+    "18.8 Implementar el convertidor `docx.libreoffice` en `src/converter/converters/docx/libreoffice.py` y el perfil `docker/libreoffice/profile/registrymodifications.xcu`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208882
+      }
+    ],
+    "18.9 Registrar DOCX a PDF en `catalog/pairs.toml`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208930
+      }
+    ],
+    "18.10 Escribir la prueba de propiedad de DOCX simple a PDF": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308208983
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324616978
+      }
+    ],
+    "18.11 Escribir la prueba de propiedad de los Recursos_Externos": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209033
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617046
+      }
+    ],
+    "18.12 Escribir pruebas unitarias de DOCX": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209083
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617094
+      }
+    ],
+    "19.1 Implementar `src/converter/converters/media_rules.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209148
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793311556163
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793312214477
+      }
+    ],
+    "19.2 Escribir la prueba de propiedad de la frecuencia de muestreo": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209201
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314316573
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315374210
+      }
+    ],
+    "19.3 Escribir la prueba de propiedad de la mezcla a estéreo": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209263
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314317176
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315375208
+      }
+    ],
+    "19.4 Escribir la prueba de propiedad de la Pista_de_Audio_Predeterminada": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209319
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793314317932
+      },
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793315376119
+      }
+    ],
+    "19.5 Implementar el inspector `media` en `src/converter/detection/inspectors/media.py` y `src/converter/converters/ffmpeg_tools.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209375
+      },
+      {
+        "executionId": "c5084503-2f98-4def-8d2c-f966457e4649",
+        "chatSessionId": "sess_954237e3-c33a-45de-8e73-ca3309739be6",
+        "timestamp": 1793373333934
+      }
+    ],
+    "19.6 Implementar el convertidor `audio.ffmpeg` en `src/converter/converters/audio.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209429
+      }
+    ],
+    "19.7 Registrar los 6 pares de audio en `catalog/pairs.toml`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209481
+      }
+    ],
+    "19.8 Escribir la prueba de propiedad de la conversión de audio": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209533
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617145
+      }
+    ],
+    "19.9 Escribir pruebas unitarias de audio": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209584
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617194
+      }
+    ],
+    "20.1 Implementar el convertidor `video.ffmpeg` en `src/converter/converters/video.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209635
+      }
+    ],
+    "20.2 Implementar el convertidor `video.extract_audio` en `src/converter/converters/video_audio.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209700
+      }
+    ],
+    "20.3 Registrar los 4 pares de video en `catalog/pairs.toml`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209747
+      }
+    ],
+    "20.4 Escribir la prueba de propiedad de la extracción de audio": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209802
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617244
+      }
+    ],
+    "20.5 Escribir la prueba de propiedad de la conversión de video": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209856
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617293
+      }
+    ],
+    "20.6 Escribir la prueba de propiedad del relleno a dimensiones pares": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209912
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617342
+      }
+    ],
+    "20.7 Escribir pruebas unitarias de video": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308209959
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617388
+      }
+    ],
+    "21.1 Implementar la generación de `languages.es.json` con `docker/whisper-langs.c` y `scripts/generate_languages.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210009
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617437
+      }
+    ],
+    "21.2 Implementar el convertidor `transcription.whisper` en `src/converter/converters/transcription.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210066
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617495
+      }
+    ],
+    "21.3 Registrar los 6 Pares_de_Transcripción en `catalog/pairs.toml`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210126
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617558
+      }
+    ],
+    "21.4 Escribir la prueba de propiedad de la Duración_Máxima_de_Transcripción": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210195
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617604
+      }
+    ],
+    "21.5 Escribir la prueba de propiedad de la reproducibilidad de la transcripción": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210247
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617645
+      }
+    ],
+    "21.6 Escribir pruebas unitarias de la transcripción": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210309
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617694
+      }
+    ],
+    "21.7 Escribir pruebas unitarias del catálogo inicial completo": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210369
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617738
+      }
+    ],
+    "22. Checkpoint - Verificar los 36 Pares_de_Conversión": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210426
+      }
+    ],
+    "23.1 Implementar `src/converter/web/index.html` y `src/converter/web/styles.css`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210479
+      }
+    ],
+    "23.2 Implementar `src/converter/web/api.js` y `src/converter/web/store.js`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210532
+      }
+    ],
+    "23.3 Implementar `src/converter/web/upload.js`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210587
+      }
+    ],
+    "23.4 Implementar `src/converter/web/cards.js`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210639
+      }
+    ],
+    "23.5 Implementar `src/converter/web/poller.js` y `src/converter/web/app.js`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210693
+      }
+    ],
+    "23.6 Escribir pruebas de extremo a extremo de envío": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210762
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617784
+      }
+    ],
+    "23.7 Escribir pruebas de extremo a extremo del flujo de una Tarea": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210813
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617831
+      }
+    ],
+    "23.8 Escribir pruebas de extremo a extremo de sesiones y conexión": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210881
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617882
+      }
+    ],
+    "24.1 Implementar `docker/build-ffmpeg.sh`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308210960
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617926
+      }
+    ],
+    "24.2 Implementar `docker/build-whisper.sh`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211030
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324617971
+      }
+    ],
+    "24.3 Implementar el `Dockerfile` y `.dockerignore`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211081
+      }
+    ],
+    "24.4 Escribir pruebas de la imagen en `tests/integration/test_image.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211130
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618019
+      }
+    ],
+    "24.5 Crear el arnés de pruebas en contenedor y el generador del corpus": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211189
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618069
+      }
+    ],
+    "24.6 Escribir la prueba de propiedad de los pares Sin_Pérdida": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211250
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618116
+      }
+    ],
+    "24.7 Escribir la prueba de propiedad del determinismo": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211319
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618163
+      }
+    ],
+    "24.8 Escribir la prueba de propiedad de los archivos dañados": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211371
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618229
+      }
+    ],
+    "24.9 Escribir pruebas de integración de los 36 pares con el corpus": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211434
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618277
+      }
+    ],
+    "24.10 Escribir la prueba sin red": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211499
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618327
+      }
+    ],
+    "24.11 Escribir la prueba de confinamiento de archivos": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211552
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618372
+      }
+    ],
+    "24.12 Escribir la prueba de concurrencia": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211603
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618420
+      }
+    ],
+    "24.13 Escribir pruebas del ciclo de vida del Contenedor": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211656
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618476
+      }
+    ],
+    "24.14 Escribir los benchmarks en `tests/benchmarks/`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211707
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618526
+      }
+    ],
+    "25.1 Escribir `docs/usage-guide.md` en español": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211762
+      }
+    ],
+    "25.2 Escribir la prueba que compara la Guía_de_Uso con `config.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211815
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618575
+      }
+    ],
+    "25.3 Implementar `scripts/generate_license_inventory.py` y `licenses/manual.toml`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211887
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618622
+      }
+    ],
+    "25.4 Escribir la prueba de regeneración del Inventario_de_Licencias": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308211941
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618670
+      }
+    ],
+    "25.5 Implementar `.github/workflows/ci.yml`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308212003
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618721
+      }
+    ],
+    "25.6 Implementar `tests/traceability.py`": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308212061
+      },
+      {
+        "executionId": "bdc76648-33c3-4a26-8ce1-c3f1c3d26063",
+        "chatSessionId": "sess_577671d4-9670-410f-b22b-eb89f1cf9e97",
+        "timestamp": 1793324618765
+      }
+    ],
+    "26. Checkpoint final - Verificar la suite completa": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793308212119
+      }
+    ],
+    "7. Implementar el Serializador_SRT, el Intérprete_SRT y la normalización de segmentos": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793320678798
+      }
+    ],
+    "4. Implementar modelos de dominio, mensajes en español y Log_de_Eventos": [
+      {
+        "executionId": "218741fa-b562-4f58-abbe-c1a47a4aa088",
+        "chatSessionId": "sess_927700ec-1dba-4701-86e3-18dc4d76af6a",
+        "timestamp": 1793322097093
+      }
+    ]
+  }
+}

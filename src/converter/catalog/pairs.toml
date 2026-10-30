@@ -1,0 +1,16 @@
+# Pares_de_Conversión del Mapa_de_Conversión_Inicial (Req 4.9).
+#
+# Empieza vacío: cada familia de convertidores (imágenes, PDF, documentos de texto, DOCX, audio,
+# video y transcripción) agrega aquí sus pares cuando se implementa, sin cambios en el núcleo
+# (Req 4.3). Un [[pair]] por par, con los Formatos ya declarados en formats.toml:
+#
+#   [[pair]]
+#   source = "PNG"               # Formato_de_Origen
+#   target = "JPG"               # Formato_de_Destino
+#   loss_class = "Con_Pérdida"   # Sin_Pérdida, Con_Pérdida, Limitada o Aproximada
+#   loss_description = "…"       # Descripción_de_Pérdida: la nota de su tabla, hasta 500 caracteres
+#   converter = "image.raster"   # identificador de @register_converter
+#
+# Forma parte del catálogo inicial: una entrada que el Registro_de_Conversiones rechaza impide
+# arrancar el Conversor (salida 70). Los catálogos adicionales van en pairs.d/*.toml, con la misma
+# forma; allí una entrada inválida se rechaza y se registra, y el resto del mapa queda igual.

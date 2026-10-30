@@ -1,0 +1,164 @@
+# Formatos del Mapa_de_Conversión_Inicial (Req 2.6, 4.9, 12.1).
+#
+# Forma parte del catálogo inicial: una entrada que el Registro_de_Conversiones rechaza impide
+# arrancar el Conversor (salida 70). Claves de cada [[format]]:
+#
+#   name               nombre del Formato
+#   category           "imagen", "documento", "audio" o "video"
+#   extensions         extensiones en minúsculas con punto inicial (Req 2.6)
+#   primary_extension  Extensión_Principal, para nombrar los Archivos_Resultado
+#   mime_type          Content-Type de la descarga
+#   signature          Firma_de_Formato: { magic = [{ offset = N, hex = "…" }, …] } o
+#                      { probe = "nombre" }, con la sonda registrada con @register_probe.
+#                      Sin firma, el Formato es un Formato_de_Texto (Req 4.4)
+#   inspector          inspector del Detector_de_Tipo: image, pdf, docx, media o text
+#   variant_probes     sondas de variante, como la de DOCX_Cifrado
+#
+# Las firmas son las de la tabla "Firmas" de design.md. El orden de este archivo es el orden de
+# registro: desempata firmas de igual especificidad y ordena la lista de Formatos_de_Origen.
+
+# Imágenes
+
+[[format]]
+name = "PNG"
+category = "imagen"
+extensions = [".png"]
+primary_extension = ".png"
+mime_type = "image/png"
+signature = { magic = [{ offset = 0, hex = "89504E470D0A1A0A" }] }
+inspector = "image"
+
+[[format]]
+name = "JPG"
+category = "imagen"
+extensions = [".jpg", ".jpeg"]
+primary_extension = ".jpg"
+mime_type = "image/jpeg"
+signature = { magic = [{ offset = 0, hex = "FFD8FF" }] }
+inspector = "image"
+
+[[format]]
+name = "WEBP"
+category = "imagen"
+extensions = [".webp"]
+primary_extension = ".webp"
+mime_type = "image/webp"
+# "RIFF" en 0 y "WEBP" en 8
+signature = { magic = [{ offset = 0, hex = "52494646" }, { offset = 8, hex = "57454250" }] }
+inspector = "image"
+
+# Documentos
+
+[[format]]
+name = "PDF"
+category = "documento"
+extensions = [".pdf"]
+primary_extension = ".pdf"
+mime_type = "application/pdf"
+# "%PDF-" dentro de los primeros 1024 bytes
+signature = { probe = "pdf_header" }
+inspector = "pdf"
+
+[[format]]
+name = "TXT"
+category = "documento"
+extensions = [".txt"]
+primary_extension = ".txt"
+mime_type = "text/plain; charset=utf-8"
+# sin firma: Formato_de_Texto
+inspector = "text"
+
+[[format]]
+name = "MD"
+category = "documento"
+extensions = [".md"]
+primary_extension = ".md"
+mime_type = "text/markdown; charset=utf-8"
+# sin firma: Formato_de_Texto
+inspector = "text"
+
+[[format]]
+name = "HTML"
+category = "documento"
+extensions = [".html", ".htm"]
+primary_extension = ".html"
+mime_type = "text/html; charset=utf-8"
+# sin firma: Formato_de_Texto
+inspector = "text"
+
+[[format]]
+name = "DOCX"
+category = "documento"
+extensions = [".docx"]
+primary_extension = ".docx"
+mime_type = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+# ZIP cuyo [Content_Types].xml declara la parte principal de WordprocessingML
+signature = { probe = "ooxml_wordprocessing" }
+inspector = "docx"
+# DOCX_Cifrado: ".docx" y archivo OLE con EncryptionInfo y EncryptedPackage (Req 2.10, 7.2)
+variant_probes = ["docx_encrypted"]
+
+# Audio
+
+[[format]]
+name = "MP3"
+category = "audio"
+extensions = [".mp3"]
+primary_extension = ".mp3"
+mime_type = "audio/mpeg"
+# ID3v2 opcional y dos cabeceras MPEG Audio Layer III consecutivas
+signature = { probe = "mpeg_audio" }
+inspector = "media"
+
+[[format]]
+name = "WAV"
+category = "audio"
+extensions = [".wav"]
+primary_extension = ".wav"
+mime_type = "audio/wav"
+# "RIFF" en 0 y "WAVE" en 8
+signature = { magic = [{ offset = 0, hex = "52494646" }, { offset = 8, hex = "57415645" }] }
+inspector = "media"
+
+[[format]]
+name = "OGG"
+category = "audio"
+extensions = [".ogg"]
+primary_extension = ".ogg"
+mime_type = "audio/ogg"
+# "OggS" en 0
+signature = { magic = [{ offset = 0, hex = "4F676753" }] }
+inspector = "media"
+
+# Video
+
+[[format]]
+name = "MP4"
+category = "video"
+extensions = [".mp4"]
+primary_extension = ".mp4"
+mime_type = "video/mp4"
+# caja ftyp en 4 con una marca admitida y sin una marca principal excluida
+signature = { probe = "isobmff_mp4" }
+inspector = "media"
+
+[[format]]
+name = "WEBM"
+category = "video"
+extensions = [".webm"]
+primary_extension = ".webm"
+mime_type = "video/webm"
+# cabecera EBML con DocType "webm"
+signature = { probe = "ebml_webm" }
+inspector = "media"
+
+# Subtítulos: solo Formato_de_Destino (Req 2.7, 12.1)
+
+[[format]]
+name = "SRT"
+category = "documento"
+extensions = [".srt"]
+primary_extension = ".srt"
+mime_type = "application/x-subrip"
+# sin firma: Formato_de_Texto
+inspector = "text"
