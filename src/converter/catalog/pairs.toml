@@ -1,16 +1,229 @@
 # Pares_de_Conversión del Mapa_de_Conversión_Inicial (Req 4.9).
 #
-# Empieza vacío: cada familia de convertidores (imágenes, PDF, documentos de texto, DOCX, audio,
-# video y transcripción) agrega aquí sus pares cuando se implementa, sin cambios en el núcleo
-# (Req 4.3). Un [[pair]] por par, con los Formatos ya declarados en formats.toml:
+# Cada familia agrega aquí sus pares, sin cambios en el núcleo (Req 4.3). El MVP registra 30
+# de los 36: 9 de imagen, 2 de PDF, 8 de documentos de texto, 1 de DOCX, 6 de audio y 4 de video.
+# Los 6 Pares_de_Transcripción quedan para después.
 #
-#   [[pair]]
-#   source = "PNG"               # Formato_de_Origen
-#   target = "JPG"               # Formato_de_Destino
-#   loss_class = "Con_Pérdida"   # Sin_Pérdida, Con_Pérdida, Limitada o Aproximada
-#   loss_description = "…"       # Descripción_de_Pérdida: la nota de su tabla, hasta 500 caracteres
-#   converter = "image.raster"   # identificador de @register_converter
-#
-# Forma parte del catálogo inicial: una entrada que el Registro_de_Conversiones rechaza impide
-# arrancar el Conversor (salida 70). Los catálogos adicionales van en pairs.d/*.toml, con la misma
-# forma; allí una entrada inválida se rechaza y se registra, y el resto del mapa queda igual.
+# Imagen a PDF usa el escritor de Pillow (tarea 15.6): recodifica y compone la transparencia
+# sobre blanco, así que esos tres pares son Con_Pérdida y no Sin_Pérdida como la tabla Imágenes.
+# DOCX a PDF no sanea el documento (tarea 18.8): la nota es la de la tabla Documentos.
+
+# --- Imágenes (image.raster, image.pdf) ---
+
+[[pair]]
+source = "PNG"
+target = "JPG"
+loss_class = "Con_Pérdida"
+loss_description = "Compresión con pérdida; la transparencia se reemplaza por fondo blanco."
+converter = "image.raster"
+
+[[pair]]
+source = "PNG"
+target = "WEBP"
+loss_class = "Sin_Pérdida"
+loss_description = "Modo sin pérdida de WEBP. Las imágenes de 16 bits por canal se reducen a 8 bits."
+converter = "image.raster"
+
+[[pair]]
+source = "PNG"
+target = "PDF"
+loss_class = "Con_Pérdida"
+loss_description = "El PDF recodifica la imagen con pérdida y reemplaza la transparencia por fondo blanco. Las imágenes de 16 bits por canal se reducen a 8 bits."
+converter = "image.pdf"
+
+[[pair]]
+source = "JPG"
+target = "PNG"
+loss_class = "Sin_Pérdida"
+loss_description = "No recupera la calidad perdida en el JPG; el archivo suele ser más grande."
+converter = "image.raster"
+
+[[pair]]
+source = "JPG"
+target = "WEBP"
+loss_class = "Con_Pérdida"
+loss_description = "Recompresión con pérdida."
+converter = "image.raster"
+
+[[pair]]
+source = "JPG"
+target = "PDF"
+loss_class = "Con_Pérdida"
+loss_description = "El JPEG se decodifica y se vuelve a comprimir con pérdida."
+converter = "image.pdf"
+
+[[pair]]
+source = "WEBP"
+target = "PNG"
+loss_class = "Sin_Pérdida"
+loss_description = "Solo WEBP estático."
+converter = "image.raster"
+
+[[pair]]
+source = "WEBP"
+target = "JPG"
+loss_class = "Con_Pérdida"
+loss_description = "Recompresión; la transparencia se reemplaza por fondo blanco."
+converter = "image.raster"
+
+[[pair]]
+source = "WEBP"
+target = "PDF"
+loss_class = "Con_Pérdida"
+loss_description = "El PDF recodifica la imagen con pérdida y reemplaza la transparencia por fondo blanco."
+converter = "image.pdf"
+
+# --- Documentos de texto ---
+
+[[pair]]
+source = "TXT"
+target = "PDF"
+loss_class = "Sin_Pérdida"
+loss_description = "Fuente y márgenes predeterminados; requiere que la fuente incluya los caracteres del texto."
+converter = "text.pdf"
+
+[[pair]]
+source = "TXT"
+target = "HTML"
+loss_class = "Sin_Pérdida"
+loss_description = "Texto escapado dentro de un documento HTML."
+converter = "text.html"
+
+[[pair]]
+source = "MD"
+target = "HTML"
+loss_class = "Sin_Pérdida"
+loss_description = "Interpretación según CommonMark."
+converter = "text.html"
+
+[[pair]]
+source = "MD"
+target = "PDF"
+loss_class = "Sin_Pérdida"
+loss_description = "Estructura CommonMark con estilo predeterminado."
+converter = "text.pdf"
+
+[[pair]]
+source = "MD"
+target = "TXT"
+loss_class = "Con_Pérdida"
+loss_description = "Se elimina el marcado."
+converter = "text.plain"
+
+[[pair]]
+source = "HTML"
+target = "PDF"
+loss_class = "Con_Pérdida"
+loss_description = "Se omiten scripts y recursos remotos; se pierde la interactividad."
+converter = "text.pdf"
+
+[[pair]]
+source = "HTML"
+target = "MD"
+loss_class = "Con_Pérdida"
+loss_description = "Se descartan estilos y elementos sin equivalente en Markdown."
+converter = "text.markdown"
+
+[[pair]]
+source = "HTML"
+target = "TXT"
+loss_class = "Con_Pérdida"
+loss_description = "Solo queda el texto."
+converter = "text.plain"
+
+[[pair]]
+source = "DOCX"
+target = "PDF"
+loss_class = "Con_Pérdida"
+loss_description = "La maquetación puede variar si faltan fuentes; comentarios, control de cambios y macros no se conservan."
+converter = "docx.libreoffice"
+
+# --- PDF como origen ---
+
+[[pair]]
+source = "PDF"
+target = "TXT"
+loss_class = "Limitada"
+loss_description = "Solo extrae la capa de texto; se pierde la maquetación. Un PDF escaneado no tiene texto extraíble."
+converter = "pdf.text"
+
+[[pair]]
+source = "PDF"
+target = "PNG"
+loss_class = "Con_Pérdida"
+loss_description = "Una imagen por página; el texto deja de ser seleccionable. Varias páginas se entregan en un archivo ZIP."
+converter = "pdf.raster"
+
+# --- Audio (audio.ffmpeg) ---
+
+[[pair]]
+source = "WAV"
+target = "MP3"
+loss_class = "Con_Pérdida"
+loss_description = "Compresión con pérdida."
+converter = "audio.ffmpeg"
+
+[[pair]]
+source = "WAV"
+target = "OGG"
+loss_class = "Con_Pérdida"
+loss_description = "Compresión con pérdida (Vorbis)."
+converter = "audio.ffmpeg"
+
+[[pair]]
+source = "MP3"
+target = "WAV"
+loss_class = "Sin_Pérdida"
+loss_description = "No recupera calidad; el archivo resulta unas 10 veces más grande."
+converter = "audio.ffmpeg"
+
+[[pair]]
+source = "MP3"
+target = "OGG"
+loss_class = "Con_Pérdida"
+loss_description = "Transcodificación entre formatos con pérdida; acumula degradación."
+converter = "audio.ffmpeg"
+
+[[pair]]
+source = "OGG"
+target = "WAV"
+loss_class = "Sin_Pérdida"
+loss_description = "No recupera calidad; el archivo resulta más grande."
+converter = "audio.ffmpeg"
+
+[[pair]]
+source = "OGG"
+target = "MP3"
+loss_class = "Con_Pérdida"
+loss_description = "Transcodificación entre formatos con pérdida; acumula degradación."
+converter = "audio.ffmpeg"
+
+# --- Video ---
+
+[[pair]]
+source = "MP4"
+target = "MP3"
+loss_class = "Con_Pérdida"
+loss_description = "Se descarta la imagen; el audio se recodifica con pérdida."
+converter = "video.extract_audio"
+
+[[pair]]
+source = "MP4"
+target = "WAV"
+loss_class = "Con_Pérdida"
+loss_description = "Se descarta la imagen; el audio no pierde calidad adicional."
+converter = "video.extract_audio"
+
+[[pair]]
+source = "MP4"
+target = "WEBM"
+loss_class = "Con_Pérdida"
+loss_description = "Recodificación de video; procesamiento lento."
+converter = "video.ffmpeg"
+
+[[pair]]
+source = "WEBM"
+target = "MP4"
+loss_class = "Con_Pérdida"
+loss_description = "Recodificación de video; procesamiento lento. Un ancho o alto impar se completa con 1 píxel negro (D16)."
+converter = "video.ffmpeg"

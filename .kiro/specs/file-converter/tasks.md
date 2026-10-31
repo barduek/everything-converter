@@ -441,7 +441,7 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
     - Página de Dimensiones_Mostradas × 0,75 pt con escala uniforme si el lado mayor supera 14 400 pt; `/ID` derivado de un hash del contenido y sin fechas.
     - _Requirements: 5.4, 5.10, 4.11, 13.4_
 
-  - [~] 15.7 Registrar los 9 pares de imagen en `catalog/pairs.toml`
+  - [x] 15.7 Registrar los 9 pares de imagen en `catalog/pairs.toml`
     - PNG, JPG y WEBP entre sí con `image.raster`, y cada uno a PDF con `image.pdf`, con la Clasificación_de_Pérdida y la Descripción_de_Pérdida de la tabla Imágenes.
     - _Requirements: 3.1, 3.2, 4.1, 4.9_
 
@@ -484,7 +484,7 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
     - Renderizado con `page.render(scale=dpi/72, may_draw_forms=True)`. Una página: PNG. Varias: ZIP con `ZIP_DEFLATED`, sin carpetas, fecha fija 1980-01-01 y nombres de `page_entry_name`; `result_kind` "zip".
     - _Requirements: 8.4, 8.5, 8.6, 8.8, 8.9, 8.11, 15.10_
 
-  - [~] 16.4 Registrar PDF a TXT y PDF a PNG en `catalog/pairs.toml`
+  - [x] 16.4 Registrar PDF a TXT y PDF a PNG en `catalog/pairs.toml`
     - _Requirements: 3.1, 3.2, 4.9_
 
   - [~] 16.5 Escribir la prueba de propiedad de PDF a TXT
@@ -534,7 +534,7 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
     - TXT y MD con caracteres no representables fallan con `caracteres_no_representables`. Aviso de Recursos_Externos omitidos en HTML y MD.
     - _Requirements: 6.1, 6.6, 6.7, 6.8, 6.11, 6.12, 6.13, 13.7_
 
-  - [~] 17.7 Registrar los 8 pares de documentos de texto en `catalog/pairs.toml`
+  - [x] 17.7 Registrar los 8 pares de documentos de texto en `catalog/pairs.toml`
     - TXT a PDF y HTML; MD a HTML, PDF y TXT; HTML a PDF, MD y TXT, con la Clasificación_de_Pérdida y la Descripción_de_Pérdida de la tabla Documentos.
     - _Requirements: 3.1, 3.2, 4.9_
 
@@ -619,13 +619,13 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
     - **Property 30: Las fuentes informadas como reemplazadas son las que faltan**
     - **Validates: Requirements 7.4**
 
-  - [~] 18.8 Implementar el convertidor `docx.libreoffice` en `src/converter/converters/docx/libreoffice.py` y el perfil `docker/libreoffice/profile/registrymodifications.xcu`
+  - [x] 18.8 Implementar el convertidor `docx.libreoffice` en `src/converter/converters/docx/libreoffice.py` y el perfil `docker/libreoffice/profile/registrymodifications.xcu`
     - **MVP:** sin el saneamiento de 18.4: convertir el DOCX original con LibreOffice y el perfil con macros desactivadas y enlaces en "nunca". El aviso de fuentes reemplazadas usa `fonts.find_replacements`; los avisos de comentarios, cambios y macros quedan para después.
     - Comprobación de la parte principal del paquete, saneamiento en subproceso, análisis de fuentes y `soffice --headless` con perfil propio copiado de la plantilla (macros desactivadas, enlaces en "nunca") y la exportación PDF del diseño.
     - Verificación del PDF con pypdfium2 y avisos de fuentes reemplazadas, comentarios omitidos, cambios aplicados y macros o Recursos_Externos omitidos.
     - _Requirements: 7.1, 7.4, 7.5, 7.6, 16.2, 16.3_
 
-  - [~] 18.9 Registrar DOCX a PDF en `catalog/pairs.toml`
+  - [x] 18.9 Registrar DOCX a PDF en `catalog/pairs.toml`
     - _Requirements: 3.1, 3.2, 4.9_
 
   - [~] 18.10 Escribir la prueba de propiedad de DOCX simple a PDF
@@ -663,12 +663,12 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
     - `ffmpeg_tools.py`: función `@on_startup` que guarda la lista de `ffmpeg -decoders`; argumentos comunes (`-protocol_whitelist file`, demuxer forzado, `-map_metadata -1`, hilos fijos de `cpus.py`); parser de `-progress pipe:1`; comprobación de Códec que produce `codec_no_soportado` con el Códec y la pista.
     - _Requirements: 9.6, 10.8, 13.7, 14.5, 16.2_
 
-  - [~] 19.6 Implementar el convertidor `audio.ffmpeg` en `src/converter/converters/audio.py`
+  - [x] 19.6 Implementar el convertidor `audio.ffmpeg` en `src/converter/converters/audio.py`
     - **MVP:** para pasar a 2 canales usar `-ac 2` de FFmpeg en lugar del filtro `pan` con `build_downmix_matrix`.
     - MP3 con `libmp3lame -q:a 2`, OGG con `libvorbis -q:a 5` y WAV con `pcm_s16le`. Frecuencia con `choose_sample_rate` y aviso si cambia; canales conservados o mezclados con `pan` y aviso; progreso por `out_time_us`.
     - _Requirements: 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 13.4, 14.5_
 
-  - [~] 19.7 Registrar los 6 pares de audio en `catalog/pairs.toml`
+  - [x] 19.7 Registrar los 6 pares de audio en `catalog/pairs.toml`
     - _Requirements: 3.1, 3.2, 4.9_
 
   - [~] 19.8 Escribir la prueba de propiedad de la conversión de audio
@@ -681,17 +681,17 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
     - _Requirements: 9.3, 9.4, 9.6_
 
 - [ ] 20. Implementar las conversiones de video y la extracción de audio
-  - [~] 20.1 Implementar el convertidor `video.ffmpeg` en `src/converter/converters/video.py`
+  - [x] 20.1 Implementar el convertidor `video.ffmpeg` en `src/converter/converters/video.py`
     - **MVP:** con el FFmpeg de Debian, codificar H.264 con `libopenh264` si está disponible y si no con `libx264`.
     - MP4 a WEBM con `libvpx-vp9` y `libopus`; WEBM a MP4 con `libopenh264`, `aac` y `+faststart`.
     - Filtro `pad` solo en WEBM a MP4 cuando `padded_size` difiere del origen, con el aviso `dimensiones_rellenadas`. `-noautorotate`, `-fps_mode passthrough`, `-map 0:v:0` y la Pista_de_Audio_Predeterminada opcional, aviso de pistas no usadas y comprobación de Códec de las pistas usadas.
     - _Requirements: 10.4, 10.5, 10.6, 10.7, 10.8, 10.10, 10.11_
 
-  - [~] 20.2 Implementar el convertidor `video.extract_audio` en `src/converter/converters/video_audio.py`
+  - [x] 20.2 Implementar el convertidor `video.extract_audio` en `src/converter/converters/video_audio.py`
     - MP4 a MP3 y MP4 a WAV con la Pista_de_Audio_Predeterminada y las reglas de canales y frecuencia de `audio.py`. `preflight` con `video_sin_audio` y una función reutilizable para los Pares_de_Transcripción.
     - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.8, 10.9_
 
-  - [~] 20.3 Registrar los 4 pares de video en `catalog/pairs.toml`
+  - [x] 20.3 Registrar los 4 pares de video en `catalog/pairs.toml`
     - _Requirements: 3.1, 3.2, 4.9_
 
   - [~] 20.4 Escribir la prueba de propiedad de la extracción de audio
@@ -748,25 +748,25 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
   - Asegurar que todas las pruebas pasan; consultar al usuario si surgen dudas.
 
 - [ ] 23. Implementar la Interfaz_de_Usuario
-  - [~] 23.1 Implementar `src/converter/web/index.html` y `src/converter/web/styles.css`
+  - [x] 23.1 Implementar `src/converter/web/index.html` y `src/converter/web/styles.css`
     - Página única en español con pila `system-ui`, íconos SVG en línea, botón "Elegir archivo" que activa un `<input type="file">` oculto sin `multiple`, Área_de_Carga, zona de avisos con `aria-live="polite"` y lista de tarjetas de Tarea. Sin recursos externos.
     - _Requirements: 18.1, 18.2, 18.3, 18.15_
 
-  - [~] 23.2 Implementar `src/converter/web/api.js` y `src/converter/web/store.js`
+  - [x] 23.2 Implementar `src/converter/web/api.js` y `src/converter/web/store.js`
     - Cliente de la API con `X-Converter-Request: 1` y JSON; detección de falta de conexión cuando ninguna solicitud distinta del envío responde durante 3 × Intervalo_de_Progreso.
     - `store.js`: lista de Identificadores_de_Tarea en `localStorage` (clave `converter.tasks`, en orden de creación) y sincronización entre pestañas con el evento `storage`.
     - _Requirements: 18.12, 18.13, 19.7_
 
-  - [~] 23.3 Implementar `src/converter/web/upload.js`
+  - [x] 23.3 Implementar `src/converter/web/upload.js`
     - Envío con `XMLHttpRequest` en el evento `change` o al soltar, con `X-File-Name` codificado con `encodeURIComponent`. Validación de `drop` (un solo elemento de tipo archivo y que no sea carpeta); cancelación de `dragover` y `drop` fuera del área. Mensajes de recepción e interrupción junto al Área_de_Carga.
     - _Requirements: 18.3, 18.4, 18.5, 18.11, 18.13, 16.13_
 
-  - [~] 23.4 Implementar `src/converter/web/cards.js`
+  - [x] 23.4 Implementar `src/converter/web/cards.js`
     - **MVP:** sin transcripción, no se muestran el selector de Idioma_de_Transcripción ni el Idioma_Detectado.
     - Tarjeta de Tarea renderizada con `textContent`: Nombre_Original, Tipo_Real, aviso de extensión, Formatos_de_Destino con su Clasificación_de_Pérdida, panel de confirmación con la Descripción_de_Pérdida, selector de Idioma_de_Transcripción con español preseleccionado, estado en español, barra de Porcentaje_de_Avance, avisos, mensaje de fallo con etapa, motivo y acción, botón de cancelación, enlace de descarga con el nombre de descarga, Idioma_Detectado y el estado "ya no está disponible".
     - _Requirements: 2.6, 3.1, 3.2, 3.3, 3.6, 3.7, 5.8, 9.3, 9.4, 10.4, 10.11, 11.3, 11.12, 15.1, 16.4, 18.6, 18.7, 18.8, 18.9, 18.10, 18.11, 18.14_
 
-  - [~] 23.5 Implementar `src/converter/web/poller.js` y `src/converter/web/app.js`
+  - [x] 23.5 Implementar `src/converter/web/poller.js` y `src/converter/web/app.js`
     - Sondeo por Tarea: cada 200 ms durante la detección, cada `max(0,5; Intervalo_de_Progreso / 2)` segundos en estados no terminales y cada 15 segundos en Estados_Terminales. Un 404 marca la Tarea como no disponible, retira los controles y quita el identificador de `localStorage`.
     - `app.js` lee `/api/config`, restaura las Tareas guardadas al cargar la página y conecta los módulos.
     - _Requirements: 3.1, 14.2, 14.5, 18.8, 18.12, 18.13, 18.14, 19.7_
@@ -792,7 +792,7 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
     - whisper.cpp 1.8 con SHA-256 fijado, `GGML_NATIVE=OFF`, `GGML_BACKEND_DL=ON` y `GGML_CPU_ALL_VARIANTS=ON`; compila `whisper-cli` y `whisper-langs`; descarga `ggml-small-q8_0.bin` y lo verifica contra el SHA publicado y un SHA-256 propio.
     - _Requirements: 11.4, 11.8, 13.1, 20.1_
 
-  - [~] 24.3 Implementar el `Dockerfile` y `.dockerignore`
+  - [x] 24.3 Implementar el `Dockerfile` y `.dockerignore`
     - **MVP:** FFmpeg desde el paquete `ffmpeg` de Debian (sin 24.1) y sin whisper.cpp, modelo ni `languages.es.json` (la transcripción queda para después). Se construye para la arquitectura local; el manifiesto multiarquitectura queda para después.
     - Etapas `ffmpeg-build`, `whisper-build`, `python-deps` (venv con `uv.lock`), `assets` (`languages.es.json`, perfil de LibreOffice, fontconfig) y final sobre `python:3.12-slim-trixie` con `libreoffice-writer-nogui`, fuentes DejaVu, Liberation, Carlito y Caladea, `/opt/converter/fonts/default`, bibliotecas `libmp3lame0`, `libvorbisenc2`, `libopus0`, `libvpx9` y `libopenh264-8`.
     - Usuario `converter` (uid 10001), `/var/lib/converter/storage`, `EXPOSE 8080`, `ENTRYPOINT ["/opt/converter/venv/bin/python", "-m", "converter"]` y el `HEALTHCHECK` del diseño. `.dockerignore` excluye `tests/`. Construcción con `docker buildx build --platform linux/amd64,linux/arm64`.
@@ -843,15 +843,15 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
     - _Requirements: 2.11, 20.2_
 
 - [ ] 25. Documentar, generar el Inventario_de_Licencias y configurar la integración continua
-  - [~] 25.1 Escribir `docs/usage-guide.md` en español
+  - [x] 25.1 Escribir `docs/usage-guide.md` en español
     - **MVP:** agregar una sección con lo que quedó para después: transcripción, saneamiento de DOCX, FFmpeg propio con licencia LGPL, imagen multiarquitectura, Inventario_de_Licencias, CI y las pruebas diferidas.
     - Comando `docker run --rm -p 8080:8080 converter:1.0.0`, ruta `/var/lib/converter/storage`, tabla de Variables_de_Configuración con nombre, tipo, unidad, rango y valor predeterminado, montaje de volúmenes (responsabilidad de quien monta, sin detección de sistemas de archivos de red, limpieza solo de `ws-…`) y opciones de endurecimiento (`--read-only` con `--tmpfs /tmp`, `--cap-drop ALL`, `--security-opt no-new-privileges`, `--memory`).
     - _Requirements: 20.2, 20.5, 20.7, 20.8_
 
-  - [~] 25.2 Escribir la prueba que compara la Guía_de_Uso con `config.py`
+  - [x] 25.2 Escribir la prueba que compara la Guía_de_Uso con `config.py`
     - _Requirements: 20.5_
 
-  - [~] 25.3 Implementar `scripts/generate_license_inventory.py` y `licenses/manual.toml`
+  - [x] 25.3 Implementar `scripts/generate_license_inventory.py` y `licenses/manual.toml`
     - Combina `dpkg-query` y `/usr/share/doc/*/copyright`, los metadatos del venv y `licenses/manual.toml` (FFmpeg, whisper.cpp, el modelo y DejaVu). Genera `licenses/inventory.json` y `THIRD_PARTY_LICENSES.md` con nombre, versión, licencia, variante, obligaciones de copyleft débil y marca de códecs con patentes (OpenH264 y H.264 y AAC de FFmpeg). Generar ambos archivos ejecutando el script en cada variante de la imagen.
     - _Requirements: 20.12_
 
@@ -859,7 +859,7 @@ El MVP cubre el flujo completo: recibir un archivo, detectar su Tipo_Real, ofrec
     - Regenera el inventario dentro de la imagen y falla si difiere de `licenses/inventory.json`.
     - _Requirements: 20.12_
 
-  - [~] 25.5 Implementar `.github/workflows/ci.yml`
+  - [x] 25.5 Implementar `.github/workflows/ci.yml`
     - Lint y tipos, pruebas unitarias y de propiedades con el perfil `ci`, construcción multiarquitectura con buildx, pruebas dentro de la imagen en runners nativos amd64 y arm64, pruebas E2E con Playwright, prueba sin red y comparación del Inventario_de_Licencias.
     - _Requirements: 20.1, 20.12_
 
