@@ -4,15 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Conversor de archivos</title>
-  <!-- Sin ícono propio: evita que el navegador pida /favicon.ico -->
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-  <main>
-    <h1>Conversor de archivos</h1>
-    <p>El Conversor está en funcionamiento.</p>
-    <p>La página para elegir un archivo y convertirlo todavía no está disponible.</p>
-  </main>
+  <header class="top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6 2h8l6 6v14H6z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    </svg>
+    <div>
+      <h1>Conversor de archivos</h1>
+      <p>Elegí un archivo, un formato de destino y descargá el resultado. Todo queda en este equipo.</p>
+    </div>
+  </header>
+
+  <p id="connection" class="banner" role="status" hidden>No hay conexión con el Conversor. Se reintenta solo.</p>
+
+  <section id="dropzone" class="dropzone">
+    <p id="upload-status" class="status" aria-live="polite"></p>
+    <button type="button" id="choose">Elegir archivo</button>
+    <input id="file" type="file">
+    <p class="hint">También podés soltar un archivo en esta zona.</p>
+  </section>
+
+  <section class="tasks">
+    <h2>Tareas</h2>
+    <div id="cards"></div>
+  </section>
+
+  <script type="module" src="/static/app.js"></script>
 </body>
 </html>

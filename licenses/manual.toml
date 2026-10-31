@@ -1,0 +1,40 @@
+# Componentes que no salen de los metadatos del venv.
+# El paquete ffmpeg de Debian (GPL) y las fuentes del sistema se anotan acá porque el
+# inventario que viaja en el repositorio no inspecciona dpkg. Dentro de la imagen,
+# `generate_license_inventory.py --system` suma los paquetes instalados.
+
+[[component]]
+name = "FFmpeg (Debian)"
+version = "paquete ffmpeg"
+license = "GPL-2.0-or-later"
+variant = "ambas"
+weak_copyleft = false
+patent_codecs = ["OpenH264", "H.264", "AAC"]
+notes = "El MVP usa el FFmpeg del paquete de Debian, compilado con --enable-gpl y con protocolos de red. El proceso igual corre con -protocol_whitelist file."
+
+[[component]]
+name = "DejaVu fonts"
+version = "paquete fonts-dejavu-core"
+license = "Bitstream Vera AND public-domain"
+variant = "ambas"
+weak_copyleft = false
+patent_codecs = []
+notes = "Fuente predeterminada de los PDF de texto, en /opt/converter/fonts/default."
+
+[[component]]
+name = "Liberation, Carlito y Caladea"
+version = "paquetes fonts-liberation, fonts-crosextra-carlito y fonts-crosextra-caladea"
+license = "SIL Open Font License 1.1"
+variant = "ambas"
+weak_copyleft = false
+patent_codecs = []
+notes = "Reemplazos métricos de las fuentes habituales de un DOCX."
+
+[[component]]
+name = "LibreOffice Writer"
+version = "paquete libreoffice-writer-nogui"
+license = "MPL-2.0"
+variant = "ambas"
+weak_copyleft = true
+patent_codecs = []
+notes = "Convierte DOCX a PDF con un perfil que no ejecuta macros."

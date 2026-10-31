@@ -49,11 +49,13 @@ from types import MappingProxyType
 from typing import TYPE_CHECKING, Protocol
 
 from converter.converters.base import ConversionFailure, StartupContext, on_startup
+from converter.converters.errors import classify_failure
+from converter.eventlog import Tool, sanitize_tool_output
 from converter.messages_es import CodecTrack, FailureReason
 from converter.models import Stage
 from converter.sandbox.cpus import effective_cpus
 from converter.sandbox.limits import SandboxTool, tool_limits
-from converter.sandbox.runner import minimal_env
+from converter.sandbox.runner import CompletedRun, minimal_env
 
 if TYPE_CHECKING:
     from converter.tasks.progress import ProgressSink
@@ -341,3 +343,21 @@ def require_decoder(
             stage=stage,
             params={"codec": stream.codec, "pista": CodecTrack(track).value},
         )
+
+
+# Motivos con los que puede terminar FFmpeg. Un Códec no soportado se decide antes, con
+# `require_decoder`, y no a partir de la salida del proceso.
+_FFMPEG_REASONS = frozenset(
+    {FailureReason.DAMAGED, FailureReason.NO_SPACE, FailureReason.INTERNAL_ERROR}
+)
+
+
+def failure_from_ffmpeg(completed: CompletedRun) -> ConversionFailure:
+    """Fallo de un FFmpeg que terminó con error o sin escribir su resultado (Req 16.9, 16.10)."""
+    detail = sanitize_tool_output(
+        Tool.FFMPEG, completed.stderr_lines, returncode=completed.returncode
+    )
+    reason = classify_failure(detail=detail)
+    if reason not in _FFMPEG_REASONS:
+        reason = FailureReason.INTERNAL_ERROR
+    return ConversionFailure(reason, detail=detail)
