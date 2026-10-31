@@ -397,6 +397,23 @@ def test_fontconfig_sees_only_the_default_font_dir() -> None:
     assert FONTCONFIG_FILE.name == _CONF.name
 
 
+@pytest.mark.req("6.11")
+def test_unknown_family_fallback_runs_before_the_generic_aliases() -> None:
+    """El reemplazo por sans-serif tiene que verse en los alias que vienen después.
+
+    fontconfig aplica cada regla una sola vez y en orden. Si este match queda debajo de
+    los alias, una familia que no está (Arial) no llega a DejaVu Sans.
+    """
+    root = ElementTree.parse(_CONF).getroot()
+    children = [child.tag for child in root]
+    assert children.index("match") < children.index("alias")
+    edit = root.find("match/edit")
+    assert edit is not None
+    assert edit.attrib["name"] == "family"
+    assert edit.attrib["mode"] == "append_last"
+    assert edit.findtext("string") == "sans-serif"
+
+
 @pytest.mark.req("6.1")
 def test_fontconfig_monospace_is_the_layout_font() -> None:
     root = ElementTree.parse(_CONF).getroot()

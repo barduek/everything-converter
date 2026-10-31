@@ -55,6 +55,15 @@ def _run(args: list[str], env: dict[str, str]) -> str:
     ).stdout
 
 
+def _family_query(family: str) -> str:
+    """Pide `family` como propiedad, que es como la carga Pango.
+
+    El argumento suelto `sans-serif` no es esa familia: FcNameParse corta en el guion
+    (separador entre familia y tamaño) y lo que llega es la familia `sans`.
+    """
+    return f":family={family}"
+
+
 @pytest.mark.req("6.11")
 def test_fontconfig_lists_only_the_default_font_dir(
     fontconfig_env: tuple[dict[str, str], list[Path]],
@@ -78,4 +87,4 @@ def test_fontconfig_resolves_families_to_the_default_font(
     fontconfig_env: tuple[dict[str, str], list[Path]], requested: str, family: str
 ) -> None:
     env, _ = fontconfig_env
-    assert _run(["fc-match", "--format", "%{family}", requested], env) == family
+    assert _run(["fc-match", "--format", "%{family}", _family_query(requested)], env) == family
